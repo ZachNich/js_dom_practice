@@ -1,4 +1,6 @@
-.article {
+/* EXERCISE REQUIRED CSS */
+
+/* .article {
     padding: 10px;
     border: 1px solid blue;
 }
@@ -17,4 +19,59 @@
 
 .dashed {
     border: 1px dashed black;
+} */
+
+/* PERSONAL CSS ADDED */
+
+body {
+    margin: unset;
+}
+
+.nav__header > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav__header > ul > li {
+    text-decoration: none;
+    padding: .5em 1em .5em 1em;
+}
+
+.nav__header > ul > li:hover, .active {
+    background-color: teal;
+}
+
+.nav__header a {
+    text-decoration: none;
+}
+
+.article {
+    background-image: url("https://blanchs.com.au/wp-content/uploads/2017/12/sample-header.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2em;
+}
+
+.article__header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.article__blockquote {
+    float: right;
+    width: 30%;
+    margin: unset;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.article__content {
+    width: 70%;
+    margin: auto;
 }
