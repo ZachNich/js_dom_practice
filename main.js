@@ -67,11 +67,6 @@ for (i = 0; i < navs.length; i++) {
 const firstHeader = document.querySelector('.article__header');
 firstHeader.classList.add('article__header--main');
 
-// adds .article__content--intro to first .article__content
-
-const firstContent = document.querySelector('.article__content');
-firstContent.classList.add('article__content--intro');
-
 // inserts info from article object to places in title
 
 document.querySelector('.article__title').textContent = `${copper_mug_article.title}`;
