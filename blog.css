@@ -25,6 +25,7 @@
 
 body {
     margin: unset;
+    min-width: 820px;
 }
 
 a {
@@ -44,11 +45,19 @@ a {
 }
 
 .nav__header > ul > li:hover, .active {
-    background-color: teal;
+    background-color: #C7E3E6;
+}
+
+.nav__header a {
+    color: rgba(0, 0, 0, 0.34);
+}
+
+.nav__header > ul > li > a:hover {
+    color: black;
 }
 
 .article {
-    background-image: url("https://blanchs.com.au/wp-content/uploads/2017/12/sample-header.jpg");
+    background-image: url("https://dbpost.com/wp-content/uploads/2018/08/hero-jelly.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     padding: 1em;
@@ -65,7 +74,7 @@ a {
     text-align: center;
     color: white;
     margin: unset;
-    padding: 1em 1em 0 1em;
+    padding: 12em 1em 0 1em;
 }
 
 .article__title {
@@ -79,22 +88,35 @@ a {
 .article__info {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 14px;
+    width: fit-content;
     color: white;
     text-align: center;
     text-transform: uppercase;
-    margin: unset;
+    margin: 0 auto;
     padding-bottom: 1em;
 }
 
 .article__content {
+    background-color: white;
+    box-shadow: 0 -2rem 2rem rgba(0,0,0,0.05);
     width: 70%;
     margin: auto;
-    padding: 0em 3em 0 3em;
+    padding: 1em 3em 0 3em;
+}
+
+.article__toc a {
+    color: #268bd2;
+}
+
+.article__content > img {
+    display: block;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5%;
 }
 
 .article__content--intro {
-    background-color: white;
-    box-shadow: 0 -2rem 2rem rgba(0,0,0,0.05);
     padding-top: 1.3em;
 }
 
