@@ -26,6 +26,8 @@
 body {
     margin: unset;
     min-width: 910px;
+    line-height: 1.5em;
+    font-family: "Lora", Georgia, "Times New Roman", Times, serif;;
 }
 
 a {
@@ -69,8 +71,9 @@ a {
 }
 
 .container--main {
-    width: 57%;
+    width: 60%;
     margin: auto;
+    padding-bottom: 4em;
 }
 
 .article__header {
@@ -107,7 +110,7 @@ a {
 
 .article__content {
     background-color: white;
-    box-shadow: 0 -2rem 2rem rgba(0,0,0,0.05);
+    box-shadow: 0 -20rem 2rem rgba(0,0,0,0.05);
     padding: 1em 3em 0 3em;
 }
 
@@ -137,4 +140,74 @@ a {
 
 .article__blockquote > p {
     margin-block-start: 0;
+}
+
+.aside__box--dark {
+    background-color: rgb(248, 248, 248);
+    padding: 2em;
+}
+
+.article__header--end {
+    font-size: 1.2em;
+    padding: 0 0 .5em 0;
+}
+
+.article__footer section {
+    padding: 3em 1.5em;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.article__footer a {
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.article__footer a:hover {
+    opacity: 0.7;
+}
+
+.article__prev {
+    text-align: left;
+    background-image: linear-gradient(to right, rgb(255, 59, 59), white);
+}
+
+.article__next {
+    text-align: right;
+    background-image: linear-gradient(to left, rgb(59, 59, 255), white);
+}
+
+.footer__nav {
+    background-image: url(https://i.graphicmama.com/blog/wp-content/uploads/2018/05/30135411/mo-boba-logo-mascot-design1.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__nav a {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer__nav li {
+    list-style-type: none;
+}
+
+.footer__container {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 4em 15em 4em 0;
+    padding-top: 4em;
+    padding-right: 10em;
+    line-height: 2em;
+}
+
+.footer__nav--internal {
+    text-align: right;
+}
+
+.footer__nav--social {
+    text-align: left;
 }
