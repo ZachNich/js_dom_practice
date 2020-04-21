@@ -25,7 +25,9 @@
 
 body {
     margin: unset;
-    min-width: 820px;
+    min-width: 910px;
+    line-height: 1.5em;
+    font-family: "Lora", Georgia, "Times New Roman", Times, serif;;
 }
 
 a {
@@ -57,10 +59,21 @@ a {
 }
 
 .article {
-    background-image: url("https://dbpost.com/wp-content/uploads/2018/08/hero-jelly.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 1em;
+    position: relative;
+}
+
+.article__img {
+    max-height: 40em;
+    min-height: 35em;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.container--main {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 4em;
 }
 
 .article__header {
@@ -71,10 +84,10 @@ a {
 }
 
 .article__header--main {
-    text-align: center;
+    text-align: left;
     color: white;
     margin: unset;
-    padding: 12em 1em 0 1em;
+    padding-top: 12em;
 }
 
 .article__title {
@@ -88,9 +101,8 @@ a {
 .article__info {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 14px;
-    width: fit-content;
     color: white;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     margin: 0 auto;
     padding-bottom: 1em;
@@ -98,9 +110,7 @@ a {
 
 .article__content {
     background-color: white;
-    box-shadow: 0 -2rem 2rem rgba(0,0,0,0.05);
-    width: 70%;
-    margin: auto;
+    box-shadow: 0 -20rem 2rem rgba(0,0,0,0.05);
     padding: 1em 3em 0 3em;
 }
 
@@ -111,8 +121,7 @@ a {
 .article__content > img {
     display: block;
     max-width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 3em auto;
     border-radius: 5%;
 }
 
@@ -129,4 +138,76 @@ a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.article__blockquote > p {
+    margin-block-start: 0;
+}
 
+.aside__box--dark {
+    background-color: rgb(248, 248, 248);
+    padding: 2em;
+}
+
+.article__header--end {
+    font-size: 1.2em;
+    padding: 0 0 .5em 0;
+}
+
+.article__footer section {
+    padding: 3em 1.5em;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.article__footer a {
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.article__footer a:hover {
+    opacity: 0.7;
+}
+
+.article__prev {
+    text-align: left;
+    background-image: linear-gradient(to right, rgb(255, 59, 59), white);
+}
+
+.article__next {
+    text-align: right;
+    background-image: linear-gradient(to left, rgb(59, 59, 255), white);
+}
+
+.footer__nav {
+    background-image: url(https://i.graphicmama.com/blog/wp-content/uploads/2018/05/30135411/mo-boba-logo-mascot-design1.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__nav a {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer__nav li {
+    list-style-type: none;
+}
+
+.footer__container {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 4em 15em 4em 0;
+    padding-top: 4em;
+    padding-right: 10em;
+    line-height: 2em;
+}
+
+.footer__nav--internal {
+    text-align: right;
+}
+
+.footer__nav--social {
+    text-align: left;
+}
