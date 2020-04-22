@@ -43,19 +43,30 @@ a {
 
 .nav__header > ul > li {
     text-decoration: none;
-    padding: .5em 1em .5em 1em;
+    padding: .3em 1em;
+    display: flex;
+    align-items: center;
 }
 
-.nav__header > ul > li:hover, .active {
-    background-color: #C7E3E6;
+.nav__header .active {
+    background-color: rgb(236, 233, 233);
 }
 
 .nav__header a {
-    color: rgba(0, 0, 0, 0.34);
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: unset;
 }
 
 .nav__header > ul > li > a:hover {
     color: black;
+}
+
+.nav__logo img {
+    padding-top: 5px;
+    margin-bottom: -5px;
+    height: 50px;
 }
 
 .article {
@@ -87,7 +98,7 @@ a {
     text-align: left;
     color: white;
     margin: unset;
-    padding-top: 12em;
+    padding-top: 14em;
 }
 
 .article__title {
@@ -145,6 +156,7 @@ a {
 .aside__box--dark {
     background-color: rgb(248, 248, 248);
     padding: 2em;
+    margin-top: 2em;
 }
 
 .article__header--end {
